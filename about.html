@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Detained</title>
+    <link rel="stylesheet" href="a-style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <img src="images/DETAINED-removebg-preview.png" alt="Detained Logo" id="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="gallary.html">Gallery</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="about-header">
+        <div class="about-box">
+            <h2>About Detained</h2>
+            <p>
+                Detained is more than just a band—it's an experience. With a distinct identity shaped by bold visuals and an immersive sound, the group thrives on energy, emotion, and raw musicality. Their aesthetic, defined by sharp triangular themes and a striking contrast of white and deep violet against black, mirrors their edgy yet refined style. While they haven't released originals yet, their journey is one of constant evolution, pushing creative boundaries with each performance. Fueled by passion and a relentless drive to make their mark, Detained is set to carve its own path in the world of music.
+            </p>
+        </div>    
+    </header>
+
+    <section class="timeline">
+        <h2>Our Journey</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <span class="year">2023</span>
+                <p>Formation of Detained</p>
+            </div>
+            <div class="timeline-item">
+                <span class="year">2024</span>
+                <p>First Live Performance</p>
+            </div>
+            <div class="timeline-item">
+                <span class="year">2025</span>
+                <p>Debut Original Album in the Works</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="band-members">
+        <h2>Meet the Band</h2>
+        <div class="members-container">
+            
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <img src="images/ubaid.JPG" alt="Ubaid">
+                    </div>
+                    <div class="member-back">
+                        <p>Ubaid is the lead guitarist, known for his electrifying solos and dynamic stage presence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <img src="images/keya.JPG" alt="Keya">
+                    </div>
+                    <div class="member-back">
+                        <p>Keya, the powerful vocalist of the band, brings raw emotion to every performance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <img src="images/prateek.JPG" alt="Prateek">
+                    </div>
+                    <div class="member-back">
+                        <p>Prateek is the drummer, setting the rhythm that keeps the band’s energy alive.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <img src="images/hari.JPG" alt="Shreyas">
+                    </div>
+                    <div class="member-back">
+                        <p>Shreyas is the keyboardist, adding depth and harmony to the band's compositions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-card">
+                <div class="member-inner">
+                    <div class="member-front">
+                        <img src="images/tanvi.JPG" alt="Tanvi">
+                    </div>
+                    <div class="member-back">
+                        <p>Tanvi is the bassist, driving the groove with deep and punchy basslines.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+<!-- Button to Open Form -->
+<button id="openForm">Contact Us</button>
+
+<!-- Form Popup (Initially Hidden) -->
+<div id="popupForm" class="popup">
+    <div class="form-container">
+        <span class="close-btn">&times;</span>
+        <div class="letter">
+            <h2>Get in Touch</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Detained Band. All rights reserved.</p>
+  </footer>
+  
+<script src="script.js"></script>
+</body>
+</html>

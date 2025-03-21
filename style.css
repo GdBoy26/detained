@@ -1,0 +1,153 @@
+/* Video Background */
+#video-background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+    object-fit: cover;
+    background-color: black;
+    filter: brightness(50%) blur(5px);
+}
+
+/* Overlay for additional darkness */
+#video-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+/* Logo Preloader */
+#preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: 9999;
+    transition: opacity 1s ease-out;
+}
+
+#animated-logo {
+    width: 300px;
+    height: auto;
+    animation: fadeOut 2s forwards 3s;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; visibility: hidden; }
+}
+
+/* Navbar Logo */
+#logo {
+    height: 60px;
+    width: auto;
+}
+
+/* Animated Text */
+@font-face {
+    font-family: 'Blanka';
+    src: url('fonts/Blanka.otf') format('opentype');
+}
+
+#animated-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: 'Blanka', sans-serif;
+    color: white;
+    text-shadow: 0 0 20px #5e17eb;
+    opacity: 0;
+    animation: fadeIn 1s forwards 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* Transparent Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(10px);
+    transition: background 0.3s ease-in-out;
+    padding: 15px 20px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 19px;
+    font-weight: bold;
+    text-shadow: 0 0 12px rgba(194, 142, 255, 0.9);
+    transition: color 0.3s ease-in-out;
+    padding: 10px 15px;
+}
+
+/* Navbar Links Hover */
+.navbar-nav .nav-link:hover {
+    color: #b480ff !important;
+    text-shadow: 0 0 20px #b480ff;
+}
+
+/* Navbar Logo */
+.navbar-brand img {
+    height: 100px;
+    width: auto;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar Logo Shrink on Scroll */
+.navbar.scrolled .navbar-brand img {
+    height: 80px;
+}
+
+/* Navbar Link Styling */
+.navbar-nav .nav-item {
+    position: relative;
+}
+
+/* Pipe Separator */
+.navbar-nav .nav-item:not(:last-child)::after {
+    content: "|";
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 10px rgba(194, 142, 255, 0.9);
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Navbar Text Styling */
+.navbar-nav .nav-item .nav-link {
+    letter-spacing: 2px;
+    padding: 0 20px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Pipe Separator */
+.navbar-nav .nav-item:not(:last-child)::after {
+    content: "|";
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 10px rgba(194, 142, 255, 0.9);
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 19px;
+    font-weight: bold;
+}

@@ -1,0 +1,237 @@
+/* Existing styles... */
+body {
+  padding-top: 100px; /* Match your navbar height */
+}
+
+/* Make background black */
+body {
+  background-color: black;
+  color: rgb(10, 0, 0);
+  margin: 0;
+}
+
+/* Adjust navbar if needed */
+#navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* Push section title down */
+.section-title {
+  margin-top: 150px; /* Adjust based on your navbar height */
+  text-align: center;
+  font-size: 36px;
+  color: #ccc;
+  font-weight: bold;
+  text-shadow: 0 0 10px #5e17eb;
+}
+
+/* Optional: Apply to all h2s under sections */
+section h2 {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 36px;
+  color: #ccc;
+  text-shadow: 0 0 10px #5e17eb;
+}
+
+/* NAVBAR STYLING */
+#navbar {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 15px 20px;
+  z-index: 1000;
+}
+
+/* Logo */
+#logo {
+  height: 60px;
+  width: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Nav Links */
+.navbar-nav .nav-link {
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px rgba(194, 142, 255, 0.9);
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Hover & Active States */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #b480ff !important;
+  text-shadow: 0 0 20px #b480ff;
+}
+
+/* Remove bullets just in case */
+.navbar-nav {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+
+/* g-style.css */
+header>h1{
+  color: #b480ff;
+  font-family: 'Blanka';
+  src: url('fonts/Blanka.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #000;
+    color: #ccc;
+    padding-bottom: 50px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 50px 20px 20px;
+  }
+  
+  h1 {
+    font-size: 3.2rem;
+    color: #5e17eb;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+  }
+  
+  .member-block {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .member-block h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #5e17eb;
+    border-left: 5px solid #5e17eb;
+    padding-left: 15px;
+    text-align: left;
+  }
+  
+  .image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+  }
+  
+  .img-box {
+    flex: 1 1 30%;
+    max-width: 30%;
+    text-align: center;
+  }
+  
+  .img-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(94, 23, 235, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .img-box img:hover {
+    transform: scale(1.05);
+  }
+  
+  .img-box p {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
+  .performance-gallery {
+    margin: 60px auto;
+    text-align: center;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .performance-gallery h2 {
+    font-size: 2.2rem;
+    color: #5e17eb;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #5e17eb;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .performance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .performance-box {
+    background: #111;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(94, 23, 235, 0.3);
+  }
+  
+  .performance-box img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .performance-box img:hover {
+    transform: scale(1.03);
+  }
+  
+  .performance-box p {
+    color: #bbb;
+    font-size: 0.95rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #000;
+    color: #888;
+    border-top: 2px solid #5e17eb;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+  }
+  
+
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .nav-links li {
+      margin-bottom: 10px;
+    }
+  
+    .logo img {
+      height: 40px;
+    }
+  }
+  
